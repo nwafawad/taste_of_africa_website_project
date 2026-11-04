@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+.hero {
+  padding-block: $space-2xl;
+  color: #fff;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url('images/hero.jpg') center / cover,
+    $color-dark-soft;
+
+  .eyebrow,
+  .hero-lead {
+    color: #e6e1d9;
+  }
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-xl;
+  align-items: center;
+
+  // Stack them on tablets and phones
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-sm;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "taste_of_africa_website_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+   "scripts": {
+    "sass": "sass scss/main.scss styles.css --watch",
+    "build": "sass scss/main.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwafawad/taste_of_africa_website_project.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nwafawad/taste_of_africa_website_project/issues"
+  },
+  "homepage": "https://github.com/nwafawad/taste_of_africa_website_project#readme",
+  "devDependencies": {
+    "sass": "^1.107.1"
+  }
+}

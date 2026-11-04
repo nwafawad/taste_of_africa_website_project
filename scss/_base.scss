@@ -1,0 +1,94 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: $font-body;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: var(--color-text);
+  background: var(--color-bg);
+  transition: background-color $transition, color $transition;
+}
+
+main {
+  padding-bottom: $space-2xl;
+}
+
+// Headings
+h1,
+h2,
+h3 {
+  font-family: $font-heading;
+  line-height: $line-height-tight;
+  letter-spacing: -0.02em;
+  margin: 0 0 $space-sm;
+}
+
+h1 { font-size: clamp(2.25rem, 5vw, 3.75rem); font-weight: 800; }
+h2 { font-size: clamp(1.75rem, 3.5vw, 2.5rem); font-weight: 800; }
+h3 { font-size: 1.375rem; font-weight: 700; }
+
+p {
+  margin: 0 0 $space-sm;
+}
+
+a {
+  color: inherit;
+}
+
+// Images never overflow their container on small screens
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Highlighted ingredients and spices
+mark {
+  background: var(--color-mark);
+  color: inherit;
+  padding: 0.1em 0.35em;
+  border-radius: 0.3em;
+}
+
+// Visible keyboard focus everywhere
+:focus-visible {
+  outline: 3px solid region-color(west, accent);
+  outline-offset: 3px;
+}
+
+// Shared helpers
+.container {
+  width: 100%;
+  max-width: $container-max;
+  margin-inline: auto;
+  padding-inline: $gutter;
+}
+
+.section {
+  padding-top: $space-2xl;
+
+  > h2 {
+    margin-bottom: $space-lg;
+  }
+}
+
+// Small label above headings
+.eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: $space-xs;
+}

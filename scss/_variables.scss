@@ -1,0 +1,79 @@
+@use 'sass:map';
+
+// Base colors (light theme)
+$color-bg:          #f8f6f2;
+$color-surface:     #faf5f5;
+$color-text:        #1d1b17;
+$color-muted:       #575148;
+$color-border:      #e8e3da;
+$color-placeholder: #e3dfd8;
+$color-mark:        #ebe1d0;
+$color-dark:        #282621;
+$color-dark-soft:   #2b2723;
+
+// Region palettes
+$regions: (
+  east: (
+    tint:   #e9d4d0,
+    strong: #ecccc6,
+    accent: #a22f29,
+    ink:    #892117,
+  ),
+  north: (
+    tint:   #dfe9e1,
+    strong: #c5dac9,
+    accent: #2e5b3c,
+    ink:    #24502f,
+  ),
+  west: (
+    tint:   #f2e7d4,
+    strong: #efdaad,
+    accent: #d2a32c,
+    ink:    #785001,
+  ),
+);
+
+@function region-color($region, $key) {
+  @return map.get($regions, $region, $key);
+}
+
+// Typography
+$font-heading: 'Bricolage Grotesque', sans-serif;
+$font-body:    'Source Sans 3', sans-serif;
+
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+$line-height-tight: 1.25;
+
+// Spacing scale
+$space-xs:  0.5rem;
+$space-sm:  1rem;
+$space-md:  1.5rem;
+$space-lg:  2rem;
+$space-xl:  3rem;
+$space-2xl: 5rem;
+
+// Layout
+$container-max: 75rem;
+$gutter:        $space-md;
+
+// Radius, shadow 
+$radius-sm:   0.625rem;
+$radius-lg:   1.25rem;
+$radius-pill: 999px;
+
+$shadow-card: 0 2px 12px rgba(28, 26, 23, 0.06);
+$transition:  0.2s ease;
+
+//  Breakpoints
+$breakpoints: (
+  tablet: 56rem,
+  mobile: 36rem,
+);
+
+// Applies styles at or below a given breakpoint.
+@mixin respond($size) {
+  @media (max-width: map.get($breakpoints, $size)) {
+    @content;
+  }
+}

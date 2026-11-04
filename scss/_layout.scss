@@ -1,0 +1,186 @@
+@use 'variables' as *;
+
+// Header
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-md;
+  padding: $space-sm $space-lg;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+
+  @include respond(tablet) {
+    flex-wrap: wrap;
+    padding: $space-sm $gutter;
+  }
+}
+
+.logo {
+  font-family: $font-heading;
+  font-size: 1.375rem;
+  font-weight: 800;
+  text-decoration: none;
+  margin: 0;
+}
+
+// Navigation
+.main-nav {
+  // On tablets and phones the nav drops to its own row
+  @include respond(tablet) {
+    order: 3;
+    width: 100%;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: $space-lg;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include respond(tablet) {
+    justify-content: center;
+    gap: $space-md;
+  }
+
+  @include respond(mobile) {
+    flex-wrap: wrap;
+    gap: $space-xs $space-sm;
+  }
+}
+
+.nav-link {
+  padding: 0.25rem 0;
+  font: inherit;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-decoration: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+
+  &:hover,
+  &.active {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.4em;
+  }
+}
+
+// Regions dropdown
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 11rem;
+  margin: 0;
+  padding: $space-xs;
+  list-style: none;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: $radius-sm;
+  box-shadow: $shadow-card;
+
+  a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+
+    &:hover {
+      background: var(--color-bg);
+    }
+  }
+
+  .dropdown.open & {
+    display: block;
+  }
+}
+
+
+// Footer 
+.site-footer {
+  padding-block: $space-xl $space-md;
+  color: #d9d3c9;
+  background: $color-dark;
+
+  .logo {
+    color: #fff;
+    margin-bottom: $space-xs;
+  }
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-xl;
+  align-items: start;
+
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer-brand p:last-child {
+  max-width: 22rem;
+}
+
+.newsletter {
+  label {
+    display: block;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: $space-xs;
+  }
+
+  input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.75rem 1.25rem;
+    font: inherit;
+    color: #fff;
+    background: $color-dark-soft;
+    border: 1px solid #4a453e;
+    border-radius: $radius-pill;
+
+    &::placeholder {
+      color: #8f877b;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #fff;
+    }
+  }
+}
+
+.newsletter-row {
+  display: flex;
+  gap: $space-xs;
+
+  @include respond(mobile) {
+    flex-direction: column;
+  }
+}
+
+.copyright {
+  margin: $space-xl 0 0;
+  padding-top: $space-md;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #a39b8f;
+  border-top: 1px solid #34302b;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Taste of Africa celebrates the food heritage of East, North and West Africa through recipes, regions and stories.">
+  <title>Taste of Africa | Home</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Taste of Africa</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li><a href="recipes/index.html" class="nav-link">Recipes</a></li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" type="button"
+                  aria-expanded="false" aria-controls="regions-menu">
+            Regions
+          </button>
+          <ul class="dropdown-menu" id="regions-menu">
+            <li><a href="regions/east-africa.html">East Africa</a></li>
+            <li><a href="regions/north-africa.html">North Africa</a></li>
+            <li><a href="regions/west-africa.html">West Africa</a></li>
+          </ul>
+        </li>
+
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+      <span aria-hidden="true">☾</span>
+    </button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">African food is on the rise</p>
+          <h1 id="hero-title">Africa's flavors are taking over the world's tables.</h1>
+          <p class="hero-lead">
+            Chefs, farmers and food entrepreneurs across the continent are bringing ingredients like cassava,
+            fonio and leafy greens to a global audience. Start your journey with three signature dishes: Ethiopian doro wat, Egyptian molokhia and Ghanaian banku.
+          </p>
+          <div class="hero-actions">
+            <a href="recipes/index.html" class="btn btn-light">Browse recipes</a>
+            <a href="#regions" class="btn btn-outline">Explore regions</a>
+          </div>
+        </div>
+
+        <div class="video-frame">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/zEOJeh-QWQ8?si=7Ke_6tQscXfXCo0T" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured dishes -->
+    <section class="section container" aria-labelledby="featured-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Featured dishes</p>
+          <h2 id="featured-title">One signature dish per region</h2>
+        </div>
+        <a href="recipes/index.html" class="text-link">All recipes →</a>
+      </div>
+
+      <div class="card-grid">
+        <figure class="dish-card region-east">
+          <img src="images/dorowat.jpg" alt="Doro wat, a deep red chicken stew with boiled eggs, served on injera">
+          <figcaption>
+            <p class="card-tag">East Africa · Ethiopia</p>
+            <h3>Doro Wat</h3>
+            <p>A slow-cooked chicken stew rich with berbere and spiced butter, served on injera.</p>
+            <a href="recipes/doro-wat.html" class="card-link">View recipe →</a>
+          </figcaption>
+        </figure>
+
+        <figure class="dish-card region-north">
+          <img src="images/molokhia.jpg" alt="A bowl of green molokhia soup served with rice and chicken">
+          <figcaption>
+            <p class="card-tag">North Africa · Egypt</p>
+            <h3>Molokhia</h3>
+            <p>A silky green soup of jute leaves, finished with garlic and coriander fried in ghee.</p>
+            <a href="recipes/molokhia.html" class="card-link">View recipe →</a>
+          </figcaption>
+        </figure>
+
+        <figure class="dish-card region-west">
+          <img src="images/banku-tilapia.jpg" alt="Banku balls with whole grilled tilapia and fresh pepper sauce">
+          <figcaption>
+            <p class="card-tag">West Africa · Ghana</p>
+            <h3>Banku and Tilapia</h3>
+            <p>Smooth fermented corn and cassava dough with grilled tilapia and fresh pepper sauce.</p>
+            <a href="recipes/banku-tilapia.html" class="card-link">View recipe →</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Explore by region  -->
+    <section class="section container" id="regions" aria-labelledby="regions-title">
+      <p class="eyebrow">Explore by region</p>
+      <h2 id="regions-title">Three kitchens, one continent</h2>
+
+      <ul class="region-grid">
+        <li>
+          <a href="regions/east-africa.html" class="region-tile region-east">
+            <h3>East Africa</h3>
+            <p>Berbere, teff, spiced butter, slow stews</p>
+            <span class="tile-cta">Discover →</span>
+          </a>
+        </li>
+        <li>
+          <a href="regions/north-africa.html" class="region-tile region-north">
+            <h3>North Africa</h3>
+            <p>Leafy greens, coriander, garlic, bread and rice</p>
+            <span class="tile-cta">Discover →</span>
+          </a>
+        </li>
+        <li>
+          <a href="regions/west-africa.html" class="region-tile region-west">
+            <h3>West Africa</h3>
+            <p>Fermented doughs, fresh pepper, grilled fish</p>
+            <span class="tile-cta">Discover →</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Latest food trends -->
+    <section class="section container" aria-labelledby="trends-title">
+      <p class="eyebrow">Latest food trends</p>
+      <h2 id="trends-title">What's cooking now</h2>
+
+      <div class="trend-grid">
+        <article class="trend">
+          <p class="trend-topic">Spices</p>
+          <h3>Berbere leaves the Ethiopian kitchen</h3>
+          <p>Home cooks around the world are adding <mark>berbere</mark> to roasts, soups and even popcorn.</p>
+          <a href="recipes/doro-wat.html" class="text-link">Read more →</a>
+        </article>
+
+        <article class="trend">
+          <p class="trend-topic">Greens</p>
+          <h3>Leafy greens take centre stage</h3>
+          <p>Dishes like molokhia show how <mark>jute leaves</mark> and other greens can be the star of a meal.</p>
+          <a href="recipes/molokhia.html" class="text-link">Read more →</a>
+        </article>
+
+        <article class="trend">
+          <p class="trend-topic">Fermentation</p>
+          <h3>The original fermentation experts</h3>
+          <p>From <mark>fermented corn dough</mark> for banku to teff batter for injera, sour flavors are back in fashion.</p>
+          <a href="recipes/banku-tilapia.html" class="text-link">Read more →</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!--  Site footer with newsletter signup -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="logo">Taste of Africa</p>
+        <p>Celebrating the food heritage of a continent, one recipe at a time.</p>
+      </div>
+
+      <form class="newsletter" action="#" method="post">
+        <label for="newsletter-email">Get a new recipe every week</label>
+        <div class="newsletter-row">
+          <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </div>
+      </form>
+    </div>
+
+    <p class="copyright">© 2026 Taste of Africa · Nawaf Ahmed</p>
+  </footer>
+
+</body>
+</html>
