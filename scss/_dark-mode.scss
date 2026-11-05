@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+// Light theme (default)
+:root {
+  --color-bg:      #{$color-bg};
+  --color-surface: #{$color-surface};
+  --color-text:    #{$color-text};
+  --color-muted:   #{$color-muted};
+  --color-border:  #{$color-border};
+  --color-mark:    #{$color-mark};
+}
+
+// Dark theme
+[data-theme='dark'] {
+  --color-bg:      #151412;
+  --color-surface: #1f1d1a;
+  --color-text:    #f2eee8;
+  --color-muted:   #b3aa9d;
+  --color-border:  #34302b;
+  --color-mark:    #3a3226;
+}
+
+// Region colors
+@each $name, $colors in $regions {
+  .region-#{$name} {
+    --tint:   #{map-get($colors, tint)};
+    --strong: #{map-get($colors, strong)};
+    --accent: #{map-get($colors, accent)};
+    --ink:    #{map-get($colors, ink)};
+  }
+}
