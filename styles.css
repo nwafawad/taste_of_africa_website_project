@@ -234,8 +234,16 @@ mark {
 .dropdown-menu a:hover {
   background: var(--color-bg);
 }
-.dropdown.open .dropdown-menu {
+.dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu, .dropdown.open .dropdown-menu {
   display: block;
+}
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -0.75rem;
+  left: 0;
+  right: 0;
+  height: 0.75rem;
 }
 
 .site-footer {

@@ -105,8 +105,18 @@
     }
   }
 
+  .dropdown:hover &,
+  .dropdown:focus-within &,
   .dropdown.open & {
     display: block;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: -0.75rem;
+    left: 0;
+    right: 0;
+    height: 0.75rem;
   }
 }
 
