@@ -432,6 +432,43 @@ mark {
   color: var(--color-muted);
 }
 
+.hidden {
+  display: none;
+}
+
+.dish-card {
+  position: relative;
+}
+
+.fav-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1.4rem;
+  color: #1d1b17;
+  background: #fff;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(28, 26, 23, 0.06);
+  cursor: pointer;
+}
+.fav-btn.is-fav {
+  color: #c0392b;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-meta {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
 .hero {
   padding-block: 5rem;
   color: #fff;
@@ -458,6 +495,51 @@ mark {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.page-lead {
+  max-width: 40rem;
+  font-size: 1.125rem;
+  color: var(--color-muted);
+}
+
+.recipe-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.2rem;
+  font: inherit;
+  font-weight: 700;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.filter-btn:hover {
+  border-color: var(--color-muted);
+}
+.filter-btn.active {
+  color: var(--color-bg);
+  background: var(--color-text);
+}
+
+.fav-count {
+  margin: 0;
+  font-weight: 700;
+  color: var(--color-muted);
 }
 
 /*# sourceMappingURL=styles.css.map */

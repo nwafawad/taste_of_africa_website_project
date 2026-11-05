@@ -134,3 +134,43 @@
     color: var(--color-muted);
   }
 }
+
+// Hide anything
+.hidden {
+  display: none;
+}
+
+// Favorite heart button on recipe cards
+.dish-card {
+  position: relative; // lets the heart sit in the image corner
+}
+
+.fav-btn {
+  position: absolute;
+  top: $space-sm;
+  right: $space-sm;
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1.4rem;
+  color: $color-text;
+  background: #fff;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: $shadow-card;
+  cursor: pointer;
+
+  &.is-fav {
+    color: #c0392b;
+  }
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-meta {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
