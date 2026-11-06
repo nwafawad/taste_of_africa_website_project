@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to make Doro Wat, Ethiopia's slow-cooked chicken stew with berbere and niter kibbeh.">
+  <title>Doro Wat | Taste of Africa</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<!-- region east gives the page East Africa colors -->
+<body class="region-east">
+  <header class="site-header">
+    <a href="../index.html" class="logo">Taste of Africa</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html" class="nav-link active" aria-current="page">Recipes</a></li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" type="button"
+                  aria-expanded="false" aria-controls="regions-menu">
+            Regions
+          </button>
+          <ul class="dropdown-menu" id="regions-menu">
+            <li><a href="../regions/east-africa.html">East Africa</a></li>
+            <li><a href="../regions/north-africa.html">North Africa</a></li>
+            <li><a href="../regions/west-africa.html">West Africa</a></li>
+          </ul>
+        </li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+      <span aria-hidden="true">☾</span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- Recipe hero -->
+    <section class="recipe-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Recipes</a> / East Africa / Doro Wat
+        </nav>
+
+        <div class="recipe-hero-inner">
+          <div>
+            <p class="eyebrow">East Africa · Ethiopia</p>
+            <h1>Doro Wat</h1>
+            <p>
+              Ethiopia's best-loved stew: chicken and whole eggs cooked slowly in a deep
+              red sauce of onions, <mark>berbere</mark> and <mark>niter kibbeh</mark>
+              (spiced butter). It is the centrepiece of holiday feasts such as Genna
+              and Fasika, scooped up with injera.
+            </p>
+
+            <div class="recipe-chips">
+              <p class="chip"><strong>Time</strong> 2 hr</p>
+              <p class="chip"><strong>Serves</strong> <span class="servings-count">6</span></p>
+              <button type="button" class="fav-btn fav-btn-wide" data-id="doro-wat" aria-pressed="false">
+                <span class="fav-icon" aria-hidden="true">♡</span> Favorite
+              </button>
+            </div>
+          </div>
+
+          <figure class="recipe-photo">
+            <img src="../images/dorowat.jpg" alt="Doro wat served on injera with a boiled egg">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ingredients, method -->
+    <div class="section container recipe-body">
+
+      <section class="ingredients" data-servings="6" aria-labelledby="ingredients-title">
+        <div class="ingredients-head">
+          <h2 id="ingredients-title">Ingredients</h2>
+          <div class="scaler">
+            <button type="button" class="servings-minus" aria-label="Fewer servings">−</button>
+            <span class="servings-count" aria-live="polite">6</span>
+            <button type="button" class="servings-plus" aria-label="More servings">+</button>
+          </div>
+        </div>
+
+        <ul class="ingredient-list">
+          <li><span>Chicken thighs and drumsticks</span> <strong data-amount="1.2" data-unit="kg">1.2 kg</strong></li>
+          <li><span>Red onions, finely chopped</span> <strong data-amount="4" data-unit="large">4 large</strong></li>
+          <li><span>Niter kibbeh (spiced butter)</span> <strong data-amount="0.5" data-unit="cup">0.5 cup</strong></li>
+          <li><span>Berbere spice</span> <strong data-amount="3" data-unit="tbsp">3 tbsp</strong></li>
+          <li><span>Garlic and ginger, minced</span> <strong data-amount="2" data-unit="tbsp each">2 tbsp each</strong></li>
+          <li><span>Hard-boiled eggs</span> <strong data-amount="6" data-unit="">6</strong></li>
+          <li><span>Lemon juice, salt</span> <strong>to taste</strong></li>
+        </ul>
+      </section>
+
+      <div>
+        <section class="method" aria-labelledby="method-title">
+          <h2 id="method-title">Method</h2>
+
+          <details class="step" open>
+            <summary>1. Cook the onions low and slow</summary>
+            <p>Cook the onions in a dry pot over low heat, stirring, for about 30 minutes until soft and deep brown. This is the base of the stew.</p>
+          </details>
+
+          <details class="step">
+            <summary>2. Bloom the spices</summary>
+            <p>Stir in the niter kibbeh, garlic, ginger and berbere. Cook for 5 minutes until the sauce turns dark red and smells fragrant.</p>
+          </details>
+
+          <details class="step">
+            <summary>3. Simmer the chicken</summary>
+            <p>Add the chicken and a cup of water. Cover and simmer for about 45 minutes, stirring now and then, until the chicken is tender and the sauce is thick.</p>
+          </details>
+
+          <details class="step">
+            <summary>4. Add the eggs and serve</summary>
+            <p>Score the peeled eggs, add them to the stew and simmer 10 more minutes. Season with lemon and salt, then serve on injera.</p>
+          </details>
+        </section>
+
+        <section class="recipe-video" aria-labelledby="video-title">
+          <h2 id="video-title">Watch it made</h2>
+          <div class="video-frame">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/zi4AT6uYKUs?si=ohDy_TT_ecdPL6dG"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Nutrition map -->
+    <div class="section container recipe-extra">
+      <section aria-labelledby="nutrition-title">
+        <h2 id="nutrition-title">Nutrition per serving, about 350 g.</h2>
+        <table class="data-table">
+          <thead>
+            <tr><th scope="col">Nutrient</th><th scope="col">Amount</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Calories</td><td>about 450 kcal</td></tr>
+            <tr><td>Protein</td><td>35 g</td></tr>
+            <tr><td>Carbohydrates</td><td>12 g</td></tr>
+            <tr><td>Fat</td><td>28 g</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="map-title">
+        <h2 id="map-title">Where it comes from</h2>
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32321963.059929345!2d18.594729781435362!3d8.542785270406656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1635d0cedd6cfd2b%3A0x7bf6a67f5348c55a!2sEthiopia!5e0!3m2!1sen!2srw!4v1793952277099!5m2!1sen!2srw"
+           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="logo">Taste of Africa</p>
+        <p>Celebrating the food heritage of a continent, one recipe at a time.</p>
+      </div>
+
+      <form class="newsletter" action="#" method="post">
+        <label for="newsletter-email">Get a new recipe every week</label>
+        <div class="newsletter-row">
+          <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </div>
+      </form>
+    </div>
+
+    <p class="copyright">© 2026 Taste of Africa · Nawaf Ahmed</p>
+  </footer>
+
+</body>
+</html>

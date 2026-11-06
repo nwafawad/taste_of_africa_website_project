@@ -78,3 +78,172 @@
   font-weight: 700;
   color: var(--color-muted);
 }
+
+
+// Hero
+.recipe-hero {
+  padding-block: $space-lg $space-2xl;
+  background: var(--tint);
+
+  .eyebrow {
+    color: var(--ink);
+  }
+
+  // Ingredients in the description
+  mark {
+    padding: 0;
+    font-weight: 700;
+    color: var(--ink);
+    background: none;
+  }
+}
+
+.breadcrumb {
+  margin-bottom: $space-lg;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+
+  a {
+    color: var(--ink);
+  }
+}
+
+.recipe-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-xl;
+  align-items: center;
+
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recipe-photo {
+  margin: 0;
+
+  img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: $radius-lg;
+  }
+}
+
+.recipe-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-xs;
+  margin-top: $space-md;
+}
+
+.chip {
+  margin: 0;
+  padding: 0.6rem 1rem;
+  background: var(--color-surface);
+  border-radius: $radius-sm;
+}
+
+// Ingredients, method and video
+.recipe-body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: $space-xl;
+  align-items: start;
+
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ingredients {
+  padding: $space-lg;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: $radius-lg;
+}
+
+.ingredients-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $space-sm;
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
+
+.scaler {
+  display: flex;
+  align-items: center;
+  gap: $space-xs;
+
+  button {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.ingredient-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    gap: $space-sm;
+    padding-block: 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+// Method steps
+.step {
+  margin-bottom: $space-sm;
+  padding: $space-sm $space-md;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: $radius-sm;
+
+  summary {
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  p {
+    margin: $space-xs 0 0;
+  }
+
+  &[open] {
+    border-left: 4px solid var(--accent);
+  }
+}
+
+.recipe-video {
+  margin-top: $space-xl;
+}
+
+// Nutrition, map
+.recipe-extra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-xl;
+
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+  }
+
+}

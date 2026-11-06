@@ -64,7 +64,8 @@ let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 // make a heart look saved (red)
 function showFavorite(button, isFav) {
   button.classList.toggle('is-fav', isFav);
-  button.textContent = isFav ? '♥' : '♡';
+  const icon = button.querySelector('.fav-icon') || button;
+  icon.textContent = isFav ? '♥' : '♡';
   button.setAttribute('aria-pressed', isFav);
 }
 
@@ -97,3 +98,39 @@ favButtons.forEach((button) => {
 
 updateFavCount();
 
+// ingredient scaler
+const ingredients = document.querySelector('.ingredients');
+
+if (ingredients) {
+  const baseServings = Number(ingredients.dataset.servings); // e.g. 6
+  let servings = baseServings;
+
+  const servingsText = document.querySelectorAll('.servings-count');
+  const amounts = document.querySelectorAll('[data-amount]');
+// recalculate every amount for the current number of servings
+  function updateIngredients() {
+    servingsText.forEach((el) => {
+      el.textContent = servings;
+    });
+
+    amounts.forEach((el) => {
+      const newAmount = Number(el.dataset.amount) * servings / baseServings;
+      const rounded = Math.round(newAmount * 10) / 10; // 1 decimal place
+      el.textContent = (rounded + ' ' + el.dataset.unit).trim();
+    });
+  }
+
+  document.querySelector('.servings-minus').addEventListener('click', () => {
+    if (servings > 1) {
+      servings--;
+      updateIngredients();
+    }
+  });
+
+  document.querySelector('.servings-plus').addEventListener('click', () => {
+    if (servings < 20) {
+      servings++;
+      updateIngredients();
+    }
+  });
+}

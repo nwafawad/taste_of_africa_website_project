@@ -174,3 +174,56 @@
   font-size: 0.9rem;
   color: var(--color-muted);
 }
+
+// wide favorite button
+.fav-btn-wide {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.6rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--color-surface);
+  border: 1px solid var(--accent);
+  border-radius: $radius-sm;
+  box-shadow: none;
+}
+
+// Google Maps embed
+.map-frame {
+  aspect-ratio: 4 / 3;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  background: var(--color-border);
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+// Tables
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+
+  th,
+  td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  th {
+    color: var(--ink);
+    background: var(--tint);
+  }
+
+  th:last-child,
+  td:last-child {
+    text-align: right;
+  }
+}
