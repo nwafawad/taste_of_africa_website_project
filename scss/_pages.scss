@@ -247,3 +247,65 @@
   }
 
 }
+
+
+.region-hero {
+  padding-block: $space-2xl;
+  background: var(--tint);
+
+  .eyebrow {
+    color: var(--ink);
+  }
+
+  mark {
+    padding: 0;
+    font-weight: 700;
+    color: var(--ink);
+    background: none;
+  }
+}
+
+.region-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-xl;
+  align-items: center;
+
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Staples, techniques boxes
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-lg;
+
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-box {
+  padding: $space-lg;
+  background: var(--tint);
+  border-radius: $radius-lg;
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  li {
+    margin-bottom: $space-xs;
+  }
+
+  mark {
+    background: var(--color-surface);
+  }
+}

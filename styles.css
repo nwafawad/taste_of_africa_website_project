@@ -742,4 +742,60 @@ mark {
   }
 }
 
+.region-hero {
+  padding-block: 5rem;
+  background: var(--tint);
+}
+.region-hero .eyebrow {
+  color: var(--ink);
+}
+.region-hero mark {
+  padding: 0;
+  font-weight: 700;
+  color: var(--ink);
+  background: none;
+}
+
+.region-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+@media (max-width: 56rem) {
+  .region-hero-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 56rem) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-box {
+  padding: 2rem;
+  background: var(--tint);
+  border-radius: 1.25rem;
+}
+.info-box h2 {
+  font-size: 1.75rem;
+}
+.info-box ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.info-box li {
+  margin-bottom: 0.5rem;
+}
+.info-box mark {
+  background: var(--color-surface);
+}
+
 /*# sourceMappingURL=styles.css.map */

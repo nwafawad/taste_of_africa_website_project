@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="East African food culture: staples, cooking techniques and dishes to try, from Ethiopia to the Swahili coast.">
+  <title>East Africa | Taste of Africa</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<!-- region east gives the page East Africa colors -->
+<body class="region-east">
+  <header class="site-header">
+    <a href="../index.html" class="logo">Taste of Africa</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../recipes/index.html" class="nav-link">Recipes</a></li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle active" type="button"
+                  aria-expanded="false" aria-controls="regions-menu">
+            Regions
+          </button>
+          <ul class="dropdown-menu" id="regions-menu">
+            <li><a href="east-africa.html" aria-current="page">East Africa</a></li>
+            <li><a href="north-africa.html">North Africa</a></li>
+            <li><a href="west-africa.html">West Africa</a></li>
+          </ul>
+        </li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+      <span aria-hidden="true">☾</span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- Region hero -->
+    <section class="region-hero">
+      <div class="container region-hero-inner">
+        <div>
+          <p class="eyebrow">Culinary region</p>
+          <h1>East Africa</h1>
+          <p>
+            From the Ethiopian highlands to the Swahili coast, East African food is built
+            on shared platters, slow-simmered stews and bold spice blends like
+            <mark>berbere</mark> and <mark>mitmita</mark>. Meals are eaten together,
+            often by hand, from one large plate.
+          </p>
+        </div>
+
+        <div class="video-frame">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1zyDUkdVZ0E?si=0_3CvPcDDFwrsFli" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- staples, techniques -->
+    <div class="section container info-grid">
+      <section class="info-box" aria-labelledby="staples-title">
+        <h2 id="staples-title">Staples</h2>
+        <ul>
+          <li><strong>Teff</strong>, the tiny grain behind injera</li>
+          <li><strong>Maize</strong>, cooked into ugali across Kenya and Tanzania</li>
+          <li><strong>Cassava</strong> and its leaves, as in Rwandan isombe</li>
+          <li><strong>Matoke</strong> (green bananas), steamed or stewed</li>
+          <li><strong>Beans and lentils</strong>, for everyday stews</li>
+        </ul>
+      </section>
+
+      <section class="info-box" aria-labelledby="techniques-title">
+        <h2 id="techniques-title">Cooking techniques</h2>
+        <ul>
+          <li><mark>Slow-cooking onions</mark> for a deep stew base (wat)</li>
+          <li><mark>Clarifying butter</mark> with spices into niter kibbeh</li>
+          <li><mark>Fermenting</mark> teff batter for several days</li>
+          <li><mark>Simmering in coconut milk</mark> on the Swahili coast</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Dishes to try -->
+    <section class="section container" aria-labelledby="dishes-title">
+      <h2 id="dishes-title">Dishes to try</h2>
+
+      <div class="card-grid">
+        <figure class="dish-card">
+          <img src="../images/dorowat.jpg" alt="Doro wat served on injera">
+          <figcaption>
+            <h3>Doro Wat</h3>
+            <p>Ethiopia, Slow-cooked chicken stew with berbere</p>
+            <a href="../recipes/doro-wat.html" class="card-link">View recipe →</a>
+          </figcaption>
+        </figure>
+
+        <figure class="dish-card">
+          <img src="../images/salatataswad.jpg" alt="A plate of salat a taswad.">
+          <figcaption>
+            <h3>Salatat aswad</h3>
+            <p>A smooth, luscious texture where tender cooked eggplant blends seamlessly with creamy peanut paste.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="dish-card">
+          <img src="../images/isombe.jpg" alt="A bowl of isombe, mashed cassava leaves in peanut sauce">
+          <figcaption>
+            <h3>Isombe</h3>
+            <p>Rwanda, Cassava leaves cooked with peanut</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="logo">Taste of Africa</p>
+        <p>Celebrating the food heritage of a continent, one recipe at a time.</p>
+      </div>
+
+      <form class="newsletter" action="#" method="post">
+        <label for="newsletter-email">Get a new recipe every week</label>
+        <div class="newsletter-row">
+          <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </div>
+      </form>
+    </div>
+
+    <p class="copyright">© 2026 Taste of Africa · Nawaf Ahmed</p>
+  </footer>
+
+</body>
+</html>
