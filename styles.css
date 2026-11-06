@@ -903,4 +903,32 @@ mark {
   font-weight: 700;
 }
 
+.mission {
+  max-width: 50rem;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+@media (max-width: 56rem) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.landmark {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: center;
+}
+@media (max-width: 56rem) {
+  .landmark {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

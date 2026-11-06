@@ -380,3 +380,33 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+// about
+
+// Large, readable mission statement
+.mission {
+  max-width: 50rem;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+// history, influence
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-xl;
+
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.landmark {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: $space-xl;
+  align-items: center;
+
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+  }
+}

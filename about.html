@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Taste of Africa: our mission, a short history of African cuisine and its global influence.">
+  <title>About | Taste of Africa</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Taste of Africa</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="recipes/index.html" class="nav-link">Recipes</a></li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" type="button"
+                  aria-expanded="false" aria-controls="regions-menu">
+            Regions
+          </button>
+          <ul class="dropdown-menu" id="regions-menu">
+            <li><a href="regions/east-africa.html">East Africa</a></li>
+            <li><a href="regions/north-africa.html">North Africa</a></li>
+            <li><a href="regions/west-africa.html">West Africa</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" class="nav-link active" aria-current="page">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+      <span aria-hidden="true">☾</span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- Our mission -->
+    <section class="section container" aria-labelledby="mission-label">
+      <p class="eyebrow" id="mission-label">Our mission</p>
+      <h1 class="mission">
+        To share Africa's food heritage through the recipes, ingredients and stories
+        that families have passed down for generations.
+      </h1>
+    </section>
+
+    <!-- History, influence -->
+    <div class="section container about-grid">
+      <section aria-labelledby="history-title">
+        <h2 id="history-title">A short history</h2>
+        <p>
+          Africa gave the world grains like <mark>teff</mark>, <mark>sorghum</mark> and
+          <mark>fonio</mark>, and coffee first grew in Ethiopia. For centuries, trade
+          across the Sahara and the Indian Ocean carried spices and cooking ideas in and
+          out of the continent.
+        </p>
+        <p>
+          Later, maize, cassava, tomatoes and chili peppers arrived from the Americas and
+          became everyday staples, the base of dishes like banku and jollof.
+        </p>
+      </section>
+
+      <section aria-labelledby="influence-title">
+        <h2 id="influence-title">Global influence</h2>
+        <p>
+          African cooks carried <mark>okra</mark>, <mark>black-eyed peas</mark> and
+          rice-growing knowledge across the Atlantic, shaping cuisines in the Caribbean,
+          Brazil and the American South. Today, African restaurants and spice blends are
+          part of food culture in cities around the world.
+        </p>
+      </section>
+    </div>
+
+    <!-- Food landmark, map -->
+    <div class="section container landmark">
+      <section aria-labelledby="landmark-title">
+        <h2 id="landmark-title">Visit a food landmark</h2>
+        <p>
+          <strong>Kimironko Market</strong>, Kigali. One of Rwanda's busiest markets,
+          where cooks buy fresh cassava leaves, plantains, beans and spices, the
+          everyday ingredients behind dishes like isombe.
+        </p>
+      </section>
+
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13321.127930594988!2d30.11643896365182!3d-1.9535303414031768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca70fc697c1a9%3A0x109e9bd1f6dfe1c6!2sKimironko%20Market%2C%20Kigali!5e0!3m2!1sen!2srw!4v1793980717764!5m2!1sen!2srw"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="logo">Taste of Africa</p>
+        <p>Celebrating the food heritage of a continent, one recipe at a time.</p>
+      </div>
+
+      <form class="newsletter" action="#" method="post">
+        <label for="newsletter-email">Get a new recipe every week</label>
+        <div class="newsletter-row">
+          <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </div>
+      </form>
+    </div>
+
+    <p class="copyright">© 2026 Taste of Africa · Nawaf Ahmed</p>
+  </footer>
+
+</body>
+</html>

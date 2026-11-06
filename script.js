@@ -180,3 +180,12 @@ if (contactForm) {
     thanks.classList.remove('hidden');
   });
 }
+
+const newsletterForm = document.querySelector('.newsletter');
+
+if (newsletterForm) {
+  newsletterForm.addEventListener('submit', (event) => {
+    event.preventDefault(); 
+    newsletterForm.innerHTML = '<p>Thanks for subscribing!</p>';
+  });
+}
