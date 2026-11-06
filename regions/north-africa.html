@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="North African food culture: staples, cooking techniques and dishes to try, from the Nile valley to the Atlas mountains.">
+  <title>North Africa | Taste of Africa</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+
+<body class="region-north">
+  <header class="site-header">
+    <a href="../index.html" class="logo">Taste of Africa</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../recipes/index.html" class="nav-link">Recipes</a></li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle active" type="button"
+                  aria-expanded="false" aria-controls="regions-menu">
+            Regions
+          </button>
+          <ul class="dropdown-menu" id="regions-menu">
+            <li><a href="east-africa.html">East Africa</a></li>
+            <li><a href="north-africa.html" aria-current="page">North Africa</a></li>
+            <li><a href="west-africa.html">West Africa</a></li>
+          </ul>
+        </li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+      <span aria-hidden="true">☾</span>
+    </button>
+  </header>
+
+  <main>
+
+    <section class="region-hero">
+      <div class="container region-hero-inner">
+        <div>
+          <p class="eyebrow">Culinary region</p>
+          <h1>North Africa</h1>
+          <p>
+            From the Nile valley to the Atlas mountains, North African cooking brings
+            together bread, beans, fresh herbs and warm spices like <mark>cumin</mark>,
+            <mark>coriander</mark> and <mark>ras el hanout</mark>. Many dishes are
+            simmered slowly and shared from one pot at the centre of the table.
+          </p>
+        </div>
+
+        <div class="video-frame">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aJaOdwbTgPo?si=v8SjGNZP9ntC4Qyj" title="
+Flavours of the Arab Golden Age" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- staples, techniques -->
+    <div class="section container info-grid">
+      <section class="info-box" aria-labelledby="staples-title">
+        <h2 id="staples-title">Staples</h2>
+        <ul>
+          <li><strong>Wheat</strong>, as flatbread and couscous</li>
+          <li><strong>Fava beans</strong>, slow-cooked into Egyptian ful medames</li>
+          <li><strong>Rice and lentils</strong>, the base of koshari</li>
+          <li><strong>Leafy greens</strong> like jute leaves for molokhia</li>
+          <li><strong>Olives and preserved lemons</strong>, especially in Morocco</li>
+        </ul>
+      </section>
+
+      <section class="info-box" aria-labelledby="techniques-title">
+        <h2 id="techniques-title">Cooking techniques</h2>
+        <ul>
+          <li><mark>Frying garlic and coriander</mark> in ghee to finish a dish</li>
+          <li><mark>Slow-cooking</mark> in a cone-shaped clay tagine</li>
+          <li><mark>Steaming couscous</mark> over a simmering stew</li>
+          <li><mark>Stewing beans</mark> gently for hours</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Dishes to try -->
+    <section class="section container" aria-labelledby="dishes-title">
+      <h2 id="dishes-title">Dishes to try</h2>
+
+      <div class="card-grid">
+        <figure class="dish-card">
+          <img src="../images/molokhia.jpg" alt="A bowl of green molokhia soup served with rice">
+          <figcaption>
+            <h3>Molokhia</h3>
+            <p>Egypt, Jute-leaf soup finished with garlic and coriander</p>
+            <a href="../recipes/molokhia.html" class="card-link">View recipe →</a>
+          </figcaption>
+        </figure>
+
+        <figure class="dish-card">
+          <img src="../images/koshari.jpg" alt="A bowl of koshari: rice, lentils and pasta topped with tomato sauce and crispy onions">
+          <figcaption>
+            <h3>Koshari</h3>
+            <p>Egypt, Rice, lentils, pasta and tomato sauce</p>
+          </figcaption>
+        </figure>
+
+        <figure class="dish-card">
+          <img src="../images/tagine.jpg" alt="A clay tagine pot with a slow-cooked stew of meat and vegetables">
+          <figcaption>
+            <h3>Tagine</h3>
+            <p>Morocco, Slow cooked in a clay pot</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="logo">Taste of Africa</p>
+        <p>Celebrating the food heritage of a continent, one recipe at a time.</p>
+      </div>
+
+      <form class="newsletter" action="#" method="post">
+        <label for="newsletter-email">Get a new recipe every week</label>
+        <div class="newsletter-row">
+          <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </div>
+      </form>
+    </div>
+
+    <p class="copyright">© 2026 Taste of Africa · Nawaf Ahmed</p>
+  </footer>
+
+</body>
+</html>
