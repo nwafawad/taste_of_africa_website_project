@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Share a family recipe, ask a question or send a correction to Taste of Africa.">
+  <title>Contact | Taste of Africa</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Taste of Africa</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="recipes/index.html" class="nav-link">Recipes</a></li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" type="button"
+                  aria-expanded="false" aria-controls="regions-menu">
+            Regions
+          </button>
+          <ul class="dropdown-menu" id="regions-menu">
+            <li><a href="regions/east-africa.html">East Africa</a></li>
+            <li><a href="regions/north-africa.html">North Africa</a></li>
+            <li><a href="regions/west-africa.html">West Africa</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+      <span aria-hidden="true">☾</span>
+    </button>
+  </header>
+
+  <main>
+    <div class="section container contact-layout">
+
+      <!-- intro -->
+      <section class="contact-intro" aria-labelledby="contact-title">
+        <p class="eyebrow">Contact</p>
+        <h1 id="contact-title">Share a recipe or say hello</h1>
+        <p>Have a family recipe, a question, or a correction? We read every message.</p>
+
+        <div class="find-us">
+          <h2>Find us</h2>
+          <address>
+            Kigali, Rwanda<br>
+            <a href="mailto:nwafawad49@gmail.com">nwafawad49@gmail.com</a>
+          </address>
+        </div>
+      </section>
+
+      <!-- Form -->
+      <div class="form-card">
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Mohammed Wardi" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <!-- The country field uses a datalist to provide suggestions. -->
+          <div class="field">
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" list="country-list" placeholder="e.g Sudan">
+            <datalist id="country-list">
+              <option value="Sudan"></option>
+              <option value="Egypt">
+              <option value="Ethiopia">
+              <option value="Ghana">
+              <option value="Kenya">
+              <option value="Morocco">
+              <option value="Nigeria">
+              <option value="Rwanda">
+              <option value="Senegal">
+              <option value="South Africa">
+              <option value="Tanzania">
+            </datalist>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell us about your favorite dish…" required></textarea>
+            <p class="char-count" aria-live="polite">0 characters · more than 20 needed</p>
+            <p class="form-error" role="alert"></p>
+          </div>
+
+          <button type="submit" class="btn btn-dark">Send message</button>
+        </form>
+
+        <!-- Shown by JavaScript after a valid submit -->
+        <p class="form-thanks hidden" role="status"></p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="logo">Taste of Africa</p>
+        <p>Celebrating the food heritage of a continent, one recipe at a time.</p>
+      </div>
+
+      <form class="newsletter" action="#" method="post">
+        <label for="newsletter-email">Get a new recipe every week</label>
+        <div class="newsletter-row">
+          <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </div>
+      </form>
+    </div>
+
+    <p class="copyright">© 2026 Taste of Africa · Nawaf Ahmed</p>
+  </footer>
+
+</body>
+</html>

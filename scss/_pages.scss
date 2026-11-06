@@ -309,3 +309,74 @@
     background: var(--color-surface);
   }
 }
+
+// contact
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: $space-xl;
+  align-items: start;
+
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.find-us {
+  margin-top: $space-lg;
+  padding-top: $space-lg;
+  border-top: 1px solid var(--color-border);
+
+  h2 {
+    font-family: $font-body;
+    font-size: 1.1rem;
+  }
+
+  address {
+    font-style: normal;
+    line-height: 2;
+  }
+}
+
+.form-card {
+  padding: $space-xl;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: $radius-lg;
+
+  @include respond(mobile) {
+    padding: $space-md;
+  }
+}
+
+// Name, email
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-md;
+
+  @include respond(mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.char-count {
+  margin: $space-xs 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.form-error {
+  margin: $space-xs 0 0;
+  font-weight: 700;
+  color: #c0392b;
+}
+
+.form-thanks {
+  margin: 0;
+  font-family: $font-heading;
+  font-size: 1.5rem;
+  font-weight: 700;
+}

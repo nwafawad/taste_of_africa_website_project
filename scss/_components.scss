@@ -227,3 +227,45 @@
     text-align: right;
   }
 }
+
+// Form fields
+.field {
+  margin-bottom: $space-md;
+
+  label {
+    display: block;
+    margin-bottom: $space-xs;
+    font-weight: 700;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font: inherit;
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: $radius-sm;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: region-color(west, accent);
+    box-shadow: 0 0 0 3px rgba(212, 165, 42, 0.3);
+  }
+
+  textarea {
+    resize: vertical;
+  }
+}
+
+.btn-dark {
+  color: var(--color-bg);
+  background: var(--color-text);
+
+  &:hover {
+    opacity: 0.85;
+  }
+}

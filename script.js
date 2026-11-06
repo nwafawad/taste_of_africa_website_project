@@ -134,3 +134,49 @@ if (ingredients) {
     }
   });
 }
+
+// Contact form validation
+const contactForm = document.querySelector('#contact-form');
+
+if (contactForm) {
+  const nameInput = document.querySelector('#name');
+  const emailInput = document.querySelector('#email');
+  const messageInput = document.querySelector('#message');
+  const charCount = document.querySelector('.char-count');
+  const errorText = document.querySelector('.form-error');
+  const thanks = document.querySelector('.form-thanks');
+
+  // live character counter while typing
+  messageInput.addEventListener('input', () => {
+    const length = messageInput.value.trim().length;
+    charCount.textContent = length + ' characters · more than 20 needed';
+  });
+
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault(); 
+
+    // check each field and show the first problem
+    if (nameInput.value.trim() === '') {
+      errorText.textContent = 'Please enter your name.';
+      nameInput.focus();
+      return;
+    }
+
+    if (!emailInput.validity.valid) {
+      errorText.textContent = 'Please enter a valid email address.';
+      emailInput.focus();
+      return;
+    }
+
+    if (messageInput.value.trim().length <= 20) {
+      errorText.textContent = 'Your message must be more than 20 characters.';
+      messageInput.focus();
+      return;
+    }
+
+    // hide the form and thank the user by name
+    contactForm.classList.add('hidden');
+    thanks.textContent = `Thank you, ${nameInput.value.trim()}! We've received your message.`;
+    thanks.classList.remove('hidden');
+  });
+}
