@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="West African food culture: staples, cooking techniques and dishes to try, from the Sahel to the Gulf of Guinea.">
+  <title>West Africa | Taste of Africa</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<!-- region west gives the page West Africa colors -->
+<body class="region-west">
+  <header class="site-header">
+    <a href="../index.html" class="logo">Taste of Africa</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../recipes/index.html" class="nav-link">Recipes</a></li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle active" type="button"
+                  aria-expanded="false" aria-controls="regions-menu">
+            Regions
+          </button>
+          <ul class="dropdown-menu" id="regions-menu">
+            <li><a href="east-africa.html">East Africa</a></li>
+            <li><a href="north-africa.html">North Africa</a></li>
+            <li><a href="west-africa.html" aria-current="page">West Africa</a></li>
+          </ul>
+        </li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+      <span aria-hidden="true">☾</span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- Region hero -->
+    <section class="region-hero">
+      <div class="container region-hero-inner">
+        <div>
+          <p class="eyebrow">Culinary region</p>
+          <h1>West Africa</h1>
+          <p>
+            From the Sahel to the Gulf of Guinea, West African meals pair hearty soups and
+            stews with starchy "swallows" eaten by hand. Heat comes from
+            <mark>scotch bonnet</mark> peppers, and richness from <mark>palm oil</mark>
+            and <mark>groundnuts</mark>.
+          </p>
+        </div>
+
+        <div class="video-frame">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7n9fsIVZWhI?si=UHxOoJNSsjX0b-xd" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- staples, techniques -->
+    <div class="section container info-grid">
+      <section class="info-box" aria-labelledby="staples-title">
+        <h2 id="staples-title">Staples</h2>
+        <ul>
+          <li><strong>Maize and cassava</strong>, fermented for banku and kenkey</li>
+          <li><strong>Yam</strong>, boiled, fried or pounded into fufu</li>
+          <li><strong>Plantain</strong>, ripe and fried or green and boiled</li>
+          <li><strong>Rice</strong>, the base of jollof</li>
+          <li><strong>Groundnuts</strong>, for soups and snacks</li>
+        </ul>
+      </section>
+
+      <section class="info-box" aria-labelledby="techniques-title">
+        <h2 id="techniques-title">Cooking techniques</h2>
+        <ul>
+          <li><mark>Fermenting</mark> corn and cassava doughs for a gentle sourness</li>
+          <li><mark>Grinding fresh pepper</mark> in an asanka (clay bowl)</li>
+          <li><mark>Grilling fish</mark> over charcoal</li>
+          <li><mark>Pounding</mark> yam and cassava into smooth fufu</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Dishes to try -->
+    <section class="section container" aria-labelledby="dishes-title">
+      <h2 id="dishes-title">Dishes to try</h2>
+
+      <div class="card-grid">
+        <figure class="dish-card">
+          <img src="../images/banku-tilapia.jpg" alt="Banku balls with whole grilled tilapia and fresh pepper sauce">
+          <figcaption>
+            <h3>Banku and Tilapia</h3>
+            <p>Ghana, Fermented corn dough with grilled tilapia</p>
+            <a href="../recipes/banku-tilapia.html" class="card-link">View recipe →</a>
+          </figcaption>
+        </figure>
+
+        <figure class="dish-card">
+          <img src="../images/jollof.jpg" alt="A plate of red-orange jollof rice">
+          <figcaption>
+            <h3>Jollof Rice</h3>
+            <p>Ghana and Nigeria, Rice in a smoky tomato base</p>
+          </figcaption>
+        </figure>
+
+        <figure class="dish-card">
+          <img src="../images/thieboudienne.jpg" alt="Thieboudienne: fish stuffed with herbs on tomato rice with vegetables">
+          <figcaption>
+            <h3>Thieboudienne</h3>
+            <p>Senegal, Fish and vegetables on rich tomato rice</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="logo">Taste of Africa</p>
+        <p>Celebrating the food heritage of a continent, one recipe at a time.</p>
+      </div>
+
+      <form class="newsletter" action="#" method="post">
+        <label for="newsletter-email">Get a new recipe every week</label>
+        <div class="newsletter-row">
+          <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </div>
+      </form>
+    </div>
+
+    <p class="copyright">© 2026 Taste of Africa · Nawaf Ahmed</p>
+  </footer>
+
+</body>
+</html>
