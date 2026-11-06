@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to make Molokhia, Egypt's jute-leaf soup finished with garlic and coriander.">
+  <title>Molokhia, Taste of Africa</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<!-- region north gives the page North Africa colors -->
+<body class="region-north">
+  <header class="site-header">
+    <a href="../index.html" class="logo">Taste of Africa</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html" class="nav-link active" aria-current="page">Recipes</a></li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" type="button"
+                  aria-expanded="false" aria-controls="regions-menu">
+            Regions
+          </button>
+          <ul class="dropdown-menu" id="regions-menu">
+            <li><a href="../regions/east-africa.html">East Africa</a></li>
+            <li><a href="../regions/north-africa.html">North Africa</a></li>
+            <li><a href="../regions/west-africa.html">West Africa</a></li>
+          </ul>
+        </li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+      <span aria-hidden="true">☾</span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- Recipe hero -->
+    <section class="recipe-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Recipes</a> / North Africa / Molokhia
+        </nav>
+
+        <div class="recipe-hero-inner">
+          <div>
+            <p class="eyebrow">North Africa, Egypt</p>
+            <h1>Molokhia</h1>
+            <p>
+               A comforting Egyptian soup of finely chopped <mark>jute leaves</mark> simmered
+              in chicken broth. Its signature finish is the <mark>ta'leya</mark>: garlic and
+              ground coriander fried in ghee and stirred in at the last moment. Served with
+              rice or bread and the chicken from the broth.
+            </p>
+
+            <div class="recipe-chips">
+              <p class="chip"><strong>Time</strong> 45 min</p>
+              <p class="chip"><strong>Serves</strong> <span class="servings-count">4</span></p>
+              <button type="button" class="fav-btn fav-btn-wide" data-id="molokhia" aria-pressed="false">
+                <span class="fav-icon" aria-hidden="true">♡</span> Favorite
+              </button>
+            </div>
+          </div>
+
+          <figure class="recipe-photo">
+            <img src="../images/molokhia.jpg" alt="a bowl of Molokhia served with rice and chicken">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ingredients, method -->
+    <div class="section container recipe-body">
+
+      <section class="ingredients" data-servings="4" aria-labelledby="ingredients-title">
+        <div class="ingredients-head">
+          <h2 id="ingredients-title">Ingredients</h2>
+          <div class="scaler">
+            <button type="button" class="servings-minus" aria-label="Fewer servings">−</button>
+            <span class="servings-count" aria-live="polite">4</span>
+            <button type="button" class="servings-plus" aria-label="More servings">+</button>
+          </div>
+        </div>
+
+        <ul class="ingredient-list">
+          <li><span>Minced molokhia (frozen or fresh)</span> <strong data-amount="400" data-unit="g">400 g</strong></li>
+          <li><span>Chicken broth</span> <strong data-amount="4" data-unit="cups">4 cups</strong></li>
+          <li><span>Garlic, crushed</span> <strong data-amount="8" data-unit="cloves">8 cloves</strong></li>
+          <li><span>Ground coriander</span> <strong data-amount="2" data-unit="tsp">2 tsp</strong></li>
+          <li><span>Ghee or butter</span> <strong data-amount="2" data-unit="tbsp">2 tbsp</strong></li>
+          <li><span>Cooked chicken</span> <strong>to serve</strong></li>
+          <li><span>Salt, lemon, rice or bread</span> <strong>to taste</strong></li>
+        </ul>
+      </section>
+
+      <div>
+        <section class="method" aria-labelledby="method-title">
+          <h2 id="method-title">Method</h2>
+
+          <details class="step" open>
+            <summary>1. Heat the broth</summary>
+            <p>Bring the chicken broth to a gentle simmer and season with salt.</p>
+          </details>
+
+          <details class="step">
+            <summary>2. Add the molokhia</summary>
+            <p>Stir in the molokhia and bring it back to a gentle simmer for about 5 minutes. Don't let it boil hard or it will separate.</p>
+          </details>
+
+          <details class="step">
+            <summary>3. Make the ta'leya</summary>
+            <p>Fry the garlic in ghee until golden, then add the coriander for 30 seconds until fragrant.</p>
+          </details>
+
+          <details class="step">
+            <summary>4. Serve</summary>
+            <p>Stir the hot ta'leya into the soup. Listen for the sizzle! Serve with rice or bread and the chicken.</p>
+          </details>
+
+        </section>
+
+        <section class="recipe-video" aria-labelledby="video-title">
+          <h2 id="video-title">Watch it made</h2>
+          <div class="video-frame">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/aCDXz0SbPl8?si=ECQgOLyddqSrsxb8"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Nutrition map -->
+    <div class="section container recipe-extra">
+      <section aria-labelledby="nutrition-title">
+        <h2 id="nutrition-title">Nutrition per serving, about 300g.</h2>
+        <table class="data-table">
+          <thead>
+            <tr><th scope="col">Nutrient</th><th scope="col">Amount</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Calories</td><td>about 220 kcal</td></tr>
+            <tr><td>Protein</td><td>12 g</td></tr>
+            <tr><td>Carbohydrates</td><td>10 g</td></tr>
+            <tr><td>Fat</td><td>14 g</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="map-title">
+        <h2 id="map-title">Where it comes from</h2>
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14621857.840203606!2d20.235949122151236!3d26.526893282262353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2sEgypt!5e0!3m2!1sen!2srw!4v1793954801573!5m2!1sen!2srw"
+           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="logo">Taste of Africa</p>
+        <p>Celebrating the food heritage of a continent, one recipe at a time.</p>
+      </div>
+
+      <form class="newsletter" action="#" method="post">
+        <label for="newsletter-email">Get a new recipe every week</label>
+        <div class="newsletter-row">
+          <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </div>
+      </form>
+    </div>
+
+    <p class="copyright">© 2026 Taste of Africa · Nawaf Ahmed</p>
+  </footer>
+
+</body>
+</html>
