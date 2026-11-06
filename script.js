@@ -12,6 +12,13 @@ if (dropdownButton) {
 // Dark / light theme
 const themeButton = document.querySelector('.theme-toggle');
 
+
+function updateThemeButton() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  themeButton.querySelector('span').textContent = isDark ? '☀' : '☾';
+  themeButton.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+}
+
 // when the page loads, use the saved theme
 if (localStorage.getItem('theme') === 'dark') {
   document.documentElement.setAttribute('data-theme', 'dark');
@@ -19,6 +26,8 @@ if (localStorage.getItem('theme') === 'dark') {
 
 // when the button is clicked, switch theme and save it
 if (themeButton) {
+  updateThemeButton();
+
   themeButton.addEventListener('click', () => {
     if (document.documentElement.getAttribute('data-theme') === 'dark') {
       document.documentElement.removeAttribute('data-theme');
@@ -27,6 +36,7 @@ if (themeButton) {
       document.documentElement.setAttribute('data-theme', 'dark');
       localStorage.setItem('theme', 'dark');
     }
+    updateThemeButton();
   });
 }
 

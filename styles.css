@@ -315,6 +315,21 @@ mark {
   border-top: 1px solid #34302b;
 }
 
+.theme-toggle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.theme-toggle:hover {
+  background: var(--color-mark);
+}
+
 .btn {
   display: inline-block;
   padding: 0.8rem 1.6rem;

@@ -194,3 +194,20 @@
   color: #a39b8f;
   border-top: 1px solid #34302b;
 }
+
+// theme toggle
+.theme-toggle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color $transition, transform $transition;
+
+  &:hover {
+    background: var(--color-mark);
+  }
+}
